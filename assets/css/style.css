@@ -107,10 +107,10 @@ img{
 }
 .header_right{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     width: 17%;
-    /* border: 1px solid red; */
+    gap: 24px;
 }
 .header_details{
     display: flex;
