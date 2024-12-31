@@ -182,7 +182,6 @@ select {
     display: flex;
     gap: 48px;
     /* justify-content: space-between; */
-    border: 1px solid red;
 }
 
 .banner_left {
@@ -243,16 +242,18 @@ select {
     display: flex;
     /* list-style: disc; */
     align-items: center;
-    gap: 24px;
+    /* gap: 24px; */
     margin-bottom: 23px;
 }
 
-.banner_item {
+.banner_items {
     font-size: 16px;
+    padding-inline: 11.8px;
     font-weight: 300;
     color: #10331E;
     font-family: var(--primary-font);
 }
+
 
 .banner_tiitle {
     font-size: 18px;
@@ -400,35 +401,6 @@ select {
     margin-top: 46px;
 }
 
-.slick-arrow {
-    border: 1px solid red;
-}
-
-.slick-next:before {
-    content: '';
-    background-image: url("../images/arrow-icon.svg");
-    width: 30px;
-    height: 30px;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.slick-prev:before {
-    background-image: url("../images/arrow-icon-left.svg");
-}
-
-.slick-next:before {
-    background-image: url("../images/arrow-icon-right.svg");
-}
-
 .slick-prev {
     left: 20px;
     z-index: 99;
@@ -438,7 +410,17 @@ select {
     right: 20px;
     z-index: 99;
 }
-
+.slick-prev:before, .slick-next:before {
+    color: red;
+}
+/* .slick-next:before {
+   background-image: url("../images/arrow-icon.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 30px;
+   height: 30px;
+   display: block;
+} */
 /* footer section */
 .footer {
     background-color: var(--green-color);

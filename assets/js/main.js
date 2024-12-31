@@ -6,7 +6,7 @@ $('.perfectSlider').slick({
     slidesToShow: 1,
     autoplay: true,
     arrows: true,
-    dots: true,
+    dots: false,
     speed: 500,
     autoplaySpeed: 1000000,
     
